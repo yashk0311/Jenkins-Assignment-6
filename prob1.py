@@ -2,6 +2,6 @@
 
 def OddEven(x):
     if x % 2 == 0:
-        return 2*x
+        return 3*x
     else: 
-        return x+1 
+        return 2*x
