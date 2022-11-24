@@ -7,9 +7,9 @@ from prob2 import pred
 class Calculator(unittest.TestCase):
 
     def test_OddEven(self):
-        x = 11
+        x = 3
         res = OddEven(x)
-        self.assertEqual(res, 12)
+        self.assertEqual(res, 6)
 
     def test_pred(self):
         x = 99
