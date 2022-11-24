@@ -14,7 +14,7 @@ class Calculator(unittest.TestCase):
     def test_pred(self):
         x = 9
         res1 = pred(x)
-        self.assertEqual(res1, 10)
+        self.assertEqual(res1, 8)
     
     
 
