@@ -1,0 +1,29 @@
+pipeline { 
+    agent any
+    stages {
+        stage('Clone Git') {
+            steps {
+                git 'https://github.com/yashk0311/Jenkins-Assignment-6'
+            }
+        }
+        stage('Build OddEven Code') {
+            steps {
+                sh "chmod u+x prob1.py"
+                sh "./prob1.py"
+            }
+        }
+        stage('Build Pred Code') {
+            steps {
+                sh "chmod u+x prob2.py"
+                sh ".prob2.py"
+            }
+        }
+
+        stage('Test Code') {
+            steps {
+                sh "chmod u+x tester.py"
+                sh "./tester.py"
+            }
+        }
+    } 
+}
