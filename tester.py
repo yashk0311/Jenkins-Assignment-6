@@ -16,6 +16,10 @@ class Calculator(unittest.TestCase):
         res1 = pred(x)
         self.assertEqual(res1, 98)
     
+    def test_pred(self):
+        x = 99
+        res1 = pred(x)
+        self.assertEqual(res1, 97)
     
 
 if __name__ == '__main__':
